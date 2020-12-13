@@ -2,7 +2,7 @@ const mysql = require("mysql");
 const express = require("express");
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
@@ -24,7 +24,7 @@ connection = mysql.createConnection(process.env.JAWSDB_URL);
         port: 3306,
         user: "root",
         password: "",
-        database: "animals_db"
+        database: "burgers_db"
     });
 
 }
